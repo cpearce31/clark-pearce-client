@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import wretch from 'wretch'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 import apiUrl from '../apiConfig'
 
@@ -37,6 +38,9 @@ class Piece extends Component {
           src={piece.full_photo}
           alt={piece.name}
         />
+        <Link to="/archive">
+          Back to archive
+        </Link>
       </div>
     )
   }
