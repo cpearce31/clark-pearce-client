@@ -41,6 +41,9 @@ class Publications extends Component {
             <p>
               {pub.summary}
             </p>
+            <a href={pub.url}>
+              Read full article
+            </a>
           </article>
         )))}
       </div>
