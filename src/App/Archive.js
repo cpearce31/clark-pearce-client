@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import wretch from 'wretch'
 
 import apiUrl from '../apiConfig'
@@ -29,13 +30,15 @@ class Archive extends Component {
         </h2>
         {(pieces.map(piece => (
           <figure key={piece.id}>
-            <img
-              src={piece.cropped_photo}
-              alt={piece.name}
-            />
-            <figcaption>
-              {piece.name}
-            </figcaption>
+            <Link to={`/pieces/${piece.id}`}>
+              <img
+                src={piece.cropped_photo}
+                alt={piece.name}
+              />
+              <figcaption>
+                {piece.name}
+              </figcaption>
+            </Link>
           </figure>
         )))}
       </div>

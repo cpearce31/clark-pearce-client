@@ -7,6 +7,8 @@ import RecentPicks from './App/RecentPicks'
 import Archive from './App/Archive'
 import Publications from './App/Publications'
 import Contact from './App/Contact'
+import Piece from './App/Piece'
+
 
 const App = () => (
   <div>
@@ -47,6 +49,10 @@ const App = () => (
       <Route
         path="/contact"
         component={Contact}
+      />
+      <Route
+        path="/pieces/:id"
+        component={Piece}
       />
     </div>
   </div>
