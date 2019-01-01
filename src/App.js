@@ -11,11 +11,21 @@ import Contact from './App/Contact'
 const App = () => (
   <div>
     <nav>
-      <Link to="/about">About</Link>
-      <Link to="/recent_picks">Recent Picks</Link>
-      <Link to="/archive">Archive</Link>
-      <Link to="/publications">Publications</Link>
-      <Link to="/contact">Contact</Link>
+      <Link to="/about">
+        About
+      </Link>
+      <Link to="/recent_picks">
+        Recent Picks
+      </Link>
+      <Link to="/archive">
+        Archive
+      </Link>
+      <Link to="/publications">
+        Publications
+      </Link>
+      <Link to="/contact">
+        Contact
+      </Link>
     </nav>
     <div>
       <Route
