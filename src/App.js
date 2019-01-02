@@ -12,24 +12,39 @@ import Piece from './App/Piece'
 
 const App = () => (
   <div>
-    <nav>
-      <Link to="/about">
+    <nav className='navbar'>
+      <Link
+        to="/about"
+        className='navbar-link'
+      >
         About
       </Link>
-      <Link to="/recent_picks">
+      <Link
+        to="/recent_picks"
+        className='navbar-link'
+      >
         Recent Picks
       </Link>
-      <Link to="/archive">
+      <Link
+        to="/archive"
+        className='navbar-link'
+      >
         Archive
       </Link>
-      <Link to="/publications">
+      <Link
+        to="/publications"
+        className='navbar-link'
+      >
         Publications
       </Link>
-      <Link to="/contact">
+      <Link
+        to="/contact"
+        className='navbar-link'
+      >
         Contact
       </Link>
     </nav>
-    <div>
+    <div className="main">
       <Route
         path="/about"
         component={About}
