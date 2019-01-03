@@ -13,10 +13,14 @@ body {
 body > div {
   margin: 15px 0;
   padding: 0 50px 50px 50px;
-  width: 900px;
+  width: 1000px;
   min-height: 95vh;
   border-right: 1px solid #000;
   border-left: 1px solid #000;
+}
+
+a {
+  text-decoration: none;
 }
 
 .navbar {
@@ -32,7 +36,6 @@ body > div {
 .navbar-link {
   color: #000;
   padding: 10px;
-  text-decoration: none;
 }
 
 .navbar-link:hover {
@@ -48,4 +51,53 @@ body > div {
 .main {
   font-size: 18px;
   line-height: 1.7em;
+}
+
+.page-title {
+  padding: 0 0 30px 0;
+  font-size: 2em;
+}
+
+.thumb-wrapper {
+  width: calc(50%);
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
+  position: relative;
+}
+
+.thumb {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+.archive-main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+}
+
+.thumb-title {
+  width: 400px;
+  height: 400px;
+  font-size: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.2em;
+  color: #ffeb84;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s ease;
+}
+
+.thumb-title:hover {
+  opacity: 1;
 }
