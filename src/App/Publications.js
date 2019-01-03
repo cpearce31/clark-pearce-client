@@ -23,7 +23,7 @@ class Publications extends Component {
     const { publications } = this.state
     return publications && (
       <div className="pubs">
-        <h2>
+        <h2 className="page-title">
           Publications
         </h2>
         {(publications.map(pub => (

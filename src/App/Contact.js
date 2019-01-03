@@ -8,7 +8,7 @@ class Contact extends Component {
   render () {
     return (
       <div>
-        <h2>
+        <h2 className="page-title">
           Contact Me
         </h2>
         <p>
