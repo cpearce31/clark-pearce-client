@@ -1,5 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
 body {
-  font-family: sans-serif;
+  font-family: 'Oxygen', sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+body > div {
+  margin: 15px 0;
+  padding: 0 50px 50px 50px;
+  width: 900px;
+  min-height: 95vh;
+  border-right: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.navbar {
+  font-size: 1.3em;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 50px;
+}
+
+.navbar-link {
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background-color: #ffeb84;
+}
+
+.hero {
+  color: #af732d;
+  font-size: 2em;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.main {
+  font-size: 18px;
+  line-height: 1.7em;
 }

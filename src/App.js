@@ -12,6 +12,14 @@ import Piece from './App/Piece'
 
 const App = () => (
   <div>
+    <header className='hero'>
+      <h1>
+        Clark Pearce
+      </h1>
+      <h3>
+        Fine Art Consulting
+      </h3>
+    </header>
     <nav className='navbar'>
       <Link
         to="/about"
@@ -19,24 +27,36 @@ const App = () => (
       >
         About
       </Link>
+      <span>
+        |
+      </span>
       <Link
         to="/recent_picks"
         className='navbar-link'
       >
         Recent Picks
       </Link>
+      <span>
+        |
+      </span>
       <Link
         to="/archive"
         className='navbar-link'
       >
         Archive
       </Link>
+      <span>
+        |
+      </span>
       <Link
         to="/publications"
         className='navbar-link'
       >
         Publications
       </Link>
+      <span>
+        |
+      </span>
       <Link
         to="/contact"
         className='navbar-link'
