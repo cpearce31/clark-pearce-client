@@ -1,5 +1,6 @@
 {
   "name": "clark-pearce-client",
+  "homepage": "https://github.io/cpearce31/cleark-pearce-client",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -50,7 +51,8 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
     "nag": "./node_modules/.bin/eslint .; exit 0",
-    "make-standard": "./node_modules/.bin/eslint --fix .; exit 0"
+    "make-standard": "./node_modules/.bin/eslint --fix .; exit 0",
+    "deploy": "sh scripts/deploy.sh"
   },
   "babel": {
     "presets": [

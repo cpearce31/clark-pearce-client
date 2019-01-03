@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.scss'
-import { Route, Link } from 'react-router-dom'
+import { Route, NavLink} from 'react-router-dom'
 
 import About from './App/About'
 import RecentPicks from './App/RecentPicks'
@@ -21,52 +21,59 @@ const App = () => (
       </h3>
     </header>
     <nav className='navbar'>
-      <Link
-        to="/about"
-        className='navbar-link'
+      <NavLink
+        exact
+        to="/"
+        className='navbar-NavLink'
+        activeClassName='nav-active'
       >
         About
-      </Link>
+      </NavLink>
       <span>
         |
       </span>
-      <Link
+      <NavLink
         to="/recent_picks"
-        className='navbar-link'
+        className='navbar-NavLink'
+        activeClassName='nav-active'
       >
         Recent Picks
-      </Link>
+      </NavLink>
       <span>
         |
       </span>
-      <Link
+      <NavLink
         to="/archive"
-        className='navbar-link'
+        className='navbar-NavLink'
+        activeClassName='nav-active'
       >
         Archive
-      </Link>
+      </NavLink>
       <span>
         |
       </span>
-      <Link
+      <NavLink
         to="/publications"
-        className='navbar-link'
+        className='navbar-NavLink'
+        activeClassName='nav-active'
       >
         Publications
-      </Link>
+      </NavLink>
       <span>
         |
       </span>
-      <Link
+      <NavLink
         to="/contact"
-        className='navbar-link'
+        className='navbar-NavLink'
+        activeClassName='nav-active'
       >
         Contact
-      </Link>
+      </NavLink>
     </nav>
     <div className="main">
       <Route
-        path="/about"
+        exact
+        path="/"
         component={About}
       />
       <Route
