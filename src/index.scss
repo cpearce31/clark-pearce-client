@@ -101,3 +101,29 @@ a {
 .thumb-title:hover {
   opacity: 1;
 }
+
+.pub {
+  display: flex;
+  border: 1px solid black;
+  padding: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.pub > img {
+  margin-right: 30px;
+  max-height: 400px;
+  max-width: 400px;
+  height: auto;
+  width: auto;
+}
+
+.pub-title {
+  font-size: 2em;
+  margin: 10px 0;
+  line-height: 1em;
+}
+
+.pub-subtitle {
+  font-size: 1.3em;
+}
