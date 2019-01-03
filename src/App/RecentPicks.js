@@ -23,19 +23,21 @@ class RecentPicks extends Component {
     const { pick } = this.state
 
     return pick && (
-      <div>
-        <h2>
+      <div className="pick">
+        <h2 className="page-title">
           Pick of the week:
           {' '}
           {pick.name}
         </h2>
-        <p>
-          {pick.description}
-        </p>
-        <img
-          src={pick.photo}
-          alt={pick.name}
-        />
+        <div className="pick-content-wrapper">
+          <p className="pick-text">
+            {pick.description}
+          </p>
+          <img
+            src={pick.photo}
+            alt={pick.name}
+          />
+        </div>
       </div>
     )
   }

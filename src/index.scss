@@ -127,3 +127,14 @@ a {
 .pub-subtitle {
   font-size: 1.3em;
 }
+
+.pick-content-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.pick-text {
+  display: block;
+  margin-left: 30px;
+  align-self: center;
+}
