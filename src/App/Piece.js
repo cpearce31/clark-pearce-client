@@ -27,20 +27,22 @@ class Piece extends Component {
     const  { piece } = this.state
 
     return piece && (
-      <div>
-        <h4>
+      <div className="piece">
+        <h4 className="page-title">
           {piece.name}
         </h4>
-        <p>
-          {piece.description}
-        </p>
         <img
           src={piece.full_photo}
           alt={piece.name}
         />
-        <Link to="/archive">
-          Back to archive
-        </Link>
+        <div className="piece-text-wrapper">
+          <p>
+            {piece.description}
+          </p>
+          <Link to="/archive">
+            Back to archive
+          </Link>
+        </div>
       </div>
     )
   }
