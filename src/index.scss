@@ -52,6 +52,24 @@ a {
   font-family: 'Playfair Display SC', serif;
 }
 
+.hero-small {
+  color: #af732d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 1.5em;
+}
+
+.hero-small > span {
+  font-size: 2em;
+  margin: 0 30px;
+}
+
+.hero > span {
+  display: none;
+}
+
 .main {
   font-size: 18px;
   line-height: 1.7em;

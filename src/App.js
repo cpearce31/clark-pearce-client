@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.scss'
 import { Route, NavLink} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 import About from './App/About'
 import RecentPicks from './App/RecentPicks'
@@ -8,22 +10,35 @@ import Archive from './App/Archive'
 import Publications from './App/Publications'
 import Contact from './App/Contact'
 import Piece from './App/Piece'
+import Home from './App/Home'
 
-
-const App = () => (
+const App = props => (
   <div>
-    <header className='hero'>
+    <header className={props.location.pathname === '/' ? 'hero' : 'hero-small'}>
       <h1>
-        Clark Pearce
+          Clark Pearce
       </h1>
+      <span>
+        |
+      </span>
       <h3>
-        Fine Art Consulting
+          Fine Art Consulting
       </h3>
     </header>
     <nav className='navbar'>
       <NavLink
         exact
         to="/"
+        className='navbar-NavLink'
+        activeClassName='nav-active'
+      >
+        Home
+      </NavLink>
+      <span>
+        |
+      </span>
+      <NavLink
+        to="/about"
         className='navbar-NavLink'
         activeClassName='nav-active'
       >
@@ -74,6 +89,10 @@ const App = () => (
       <Route
         exact
         path="/"
+        component={Home}
+      />
+      <Route
+        path="/about"
         component={About}
       />
       <Route
@@ -100,4 +119,10 @@ const App = () => (
   </div>
 )
 
-export default App
+App.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }).isRequired,
+}
+
+export default withRouter(App)
